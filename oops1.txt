@@ -1,0 +1,470 @@
+understanding towards programming
+
+computer/mobile required
+
+learning mindset-->problem-->(idea-->algorithm/pseudocode-->flowchart
+--->programming language--->translator-->m/c executable program-->output
+
+program-->systematic set of instructions written in coded form to perform a particular task.
+
+high level src program-->compiler-->low level obj program-->assembler
+system programs
+
+IDE
+editor-->debugger-->compiler-->macroprocessor-->assembler-->linker-->loader
+
+languages
+M-->A-->B-->C-->C++-->java/VB-->.net-->python
+M-->machine language
+lOW LEVEl
+A-->Assembly language
+B-->Basic Conceptual programming language
+HIGH LEVEL
+C-->Compiler based languages
+C++
+
+COMPILER/INTERPRETER
+
+C++  is an object oriented language
+A,B and C were procedural oriented languages
+
+
+procedure
+
+
+Main Program-->subprograms (Top down approach)
+
+Class(data & code together)-->using objects
+
+class1-->obj1
+class2-->obj2
+class3-->obj3
+
+main()
+{
+obj1
+obj2
+obj3
+}
+
+
+
+
+idea(raw thing)
+algorithm-->systematic set of instructions written in any language
+pseudocode-->standard way of writing an algorithm
+flowchart-->pictorial view of an algorithm
+programming language-->grammar-->syntax
+
+language
+concepts
+syntax
+ide
+sementics/logic
+understanding
+problem solving
+practice/continuity
+creativity
+algorithms
+
+
+steps to develop a procedure/structure of a procedure
+
+1. Documentation section-optional
+2. Link Section-mandatory
+3. Namespace initialisation- mandatory for visual compilers
+4. Global definition/Macro definition-optional
+5. Global declaration-optional
+6. Main Program section-mandatory
+		{
+			1. Local declaration and definition-optional
+			2. Execution section-mandatory
+		}
+7. Subprogram section-optional
+
+
+
+
+//program for finding factorial	/*documentation section*/
+#include<iostream>					//link section # is called preprocessor directive
+using namespace std;				//namespace initialisation
+#define c "chitkara university"  //macro definition
+#define pi 3.14
+void welcome();						//function prototype
+int f=1;								//global declaration and definition
+int main()							//main program section
+{
+	int n;								//local declaration
+	cout<<"enter the value of n";
+	cin>>n;
+	for(int i=n;i>0;i--)
+	{
+		f=f*i;
+	}
+	cout<<" the factorial is"<<f;
+	cout<<c;
+	welcome();				//function call
+	return 0;
+}
+void welcome()				//subprogram function definition
+{
+	cout<<"hello world";
+}
+
+
+//  or /*.....*/       comments
+#   pre processor directive
+include/main/int/void/for/return/define/cout/cin/using/namespace/std      keyword-reserved words of any language
+int f=1;  
+int is a keyword/datatype, 
+f is an identifier, 
+1 is constant, 
+= and ; are the operators
+
+
+keywords-identifiers/variables-constants
+operators-symbols used for operands
+
+< > or " "  help to include library files
+
+;			terminal symbol (every statement should ends with a semicolon)
+,           comma
+=			assignment operators	
+<<			insertion operator	used with cout
+>>			extraction operator used with cin
+
+
+cin>>n;
+
+cout<<c;
+
+
+
+              extract-->
+user(data)--->system-->user(info)
+				insert-->
+
+#include<iostream>
+
+{}  local block
+
+
+SIMPLE INTEREST
+
+SI=PRT/100
+a=pi*r*r/3.14*r*r
+a=2*pi*r
+a=l*b
+
+idea-->CI=P(1+R/100)^T-P-->variables-->p,r,t,ci
+
+//PROGRAM FOR FINDING COMPOUND INTEREST
+#include<iostream>
+#include<math>
+using namespace std;
+int main()
+{
+	int ci,p,r,t;
+	p=1000;
+	r=5;
+	t=10;
+	ci=p*pow((1+(r/100)),t)-p;
+	cout<<"the compound interest is"<<ci;
+return 0;
+}
+
+//PROGRAM FOR FINDING COMPOUND INTEREST
+#include<iostream>
+#include<math>
+using namespace std;
+
+int main()
+{
+	int ci,p,r,t;
+goto ankit;//forward goto
+	/*cout<<"enter the value of p";
+anshul:	
+	cin>>p;
+	cout<<"enter the value of r";
+	cin>>r;
+	cout<<"enter the value of t";
+	cin>>t;*/
+	
+	cout<<"enter the values of p,r,t";
+	cin>>p>>r>>t;
+
+	ci=p*pow((1+(r/100)),t)-p;
+ankit:
+	cout<<"the compound interest is"<<ci;
+goto anshul;//backword goto
+return 0;
+}
+
+
+//PROGRAM FOR FINDING area of circle
+using namespace std;
+#define pi 3.14
+int main()
+{
+	int a,r=10;
+	a=3.14*r*r;	
+	return 0;
+}
+
+
+
+
+datatypes-->natural, spatial, rangial
+
+int a=10;
+
+int-->integer, 4 bytes, -2^31 to (2^31)-1
+
+
+c=a+b
+
+
+-2^n-1 to (2^n-1)-1 where n is no. of bits
+
+char a='b';
+
+char-->character, 1 byte, -2^(8-1) to (2^7)-1  (-128 to 127)corresponding ascii values
+y=121
+z=122
+a-z  97-122
+A-Z  65-
+
+
+
+int -4bytes
+char 1 byte
+float 4 bytes
+long take 8 bytes
+double take 10 bytes
+
+1 byte=8 bits
+
+
+
+
+int a=10;
+
+int--> signed
+
+unsigned int  -->always positive
+
+
+signed= -2^n-1 to 2^(n-1)-1
+unsigned = 0 tp 2^n  -1
+short will take 2 bytes
+long
+
+
+
+long int a =10;   integer/4 bytes/-x to x-1   2 bytes  -32768 to 32767   c=30000+40000
+
+
+unsigned int=10;  integer/4 bytes/0 t0 x   2 bytes   0 to 64255   c=-30000+40000
+
+
+int a=10;
+
+
+int datatype
+a variable/identifier
+10 constant
+= operator
+
+
+
+int a;
+int a,b;
+int a;
+int b;
+
+int a1;
+int 1a;  not allowed
+int a_1;
+int a.1;not allowed
+a-1; not allowed
+a 1 is not allowed
+a_1
+
+roll_no;
+
+
+
+operation-->opcode, operator, operand
+
+ADD A B
+
+ADD was opcode
+
+c=a+b;
+a and b are operands
++,=,; are the operators
+
+
+y=(x<5?3:4);
+
+if(x<5)
+y=3;
+else
+y=4;
+
+
+
+decision making statements in c++
+
+branching(if, if-else, else-if, iff, switch)
+looping (while, do-while, for)
+jumping (goto, break, continue)
+
+
+
+
+
+int main()
+{
+int x;
+cin>>x;
+if(x==3)
+{
+	cout<<"hello";
+}
+else if(x==4)
+{
+	cout<<"hi";
+}
+else
+{
+	cout<<"dont know";
+}
+
+return 0;
+}
+
+
+
+if(x>5)
+{
+	if(y>6)
+	{
+		if(z<2)
+		{
+			cout<<"hello";
+		}
+	}
+}
+
+if(x>5 && y>6 && z<2)
+{
+cout<<"hello";
+}
+
+
+int main()
+{
+int x;
+cin>>x;
+switch(x)=3
+{
+	case 1:
+	{
+	cout<<"hello";
+	}
+	case 2:
+	cout<<"hi";
+	case 3:<--
+	{
+	cout<<"dont know";
+	break;
+	}
+	default:
+	{cout<<"anything";}
+}
+
+
+
+branching statements---if, if-else, else-if, iff, switch
+looping-while, do-while and for
+
+loop-->repetioion
+
+initialization
+test condition
+update the initialization/inc or dec
+
+statements
+
+						initialisation;	
+						while(test condition)
+						{
+							statement/s;
+							inc/dec;
+						}
+
+						int i=10;  //entry controlled loop
+						while(i<9)
+						{
+							cout<<"hello";
+							i++;
+						}//hellohellohellohello
+
+
+						int i=10;//exit controlled loop
+						do
+						{
+							cout<<"hello";
+							i++;//i=i+1
+						}while(i<9);//hellohellohellohello
+
+
+						for(int i=0;i<100;i++)/for(int i=1;i<=100;i++)/for(i=100;i>0;i--)//entry controlled loop
+						{
+							cout<<"hello";
+						}
+
+
+
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
